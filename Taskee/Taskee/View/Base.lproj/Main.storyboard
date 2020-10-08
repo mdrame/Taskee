@@ -18,11 +18,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="uuA-cX-ZXr">
-                        <barButtonItem key="rightBarButtonItem" title="New" style="done" id="H6s-KC-XHd"/>
+                        <barButtonItem key="rightBarButtonItem" title="New" style="done" id="H6s-KC-XHd">
+                            <connections>
+                                <action selector="createNewProject:" destination="BYZ-38-t0r" id="dd5-fj-Dsa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="t8g-67-dKN" kind="presentation" id="Xfe-cc-XVU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,16 +74,17 @@
             </objects>
             <point key="canvasLocation" x="1796" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Project View Controller-->
         <scene sceneID="bdc-WE-YY0">
             <objects>
-                <viewController id="t8g-67-dKN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createeditProjectViewController" id="t8g-67-dKN" customClass="EditProjectViewController" customModule="Taskee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Li-43-uLl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="3uc-zb-dtJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DaF-hh-5DU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPt-Ln-apQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

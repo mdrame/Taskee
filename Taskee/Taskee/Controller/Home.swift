@@ -9,8 +9,8 @@
 import UIKit
 
 class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +20,14 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         homeTableView.delegate = self
         homeTableView.dataSource = self
     }
+    
+    // Outlets Action
+    @IBAction func createNewProject(_ sender: UIBarButtonItem) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let createeditProjectViewConroller = storyBoard.instantiateViewController(withIdentifier: "createeditProjectViewController") as! EditProjectViewController
+        self.navigationController?.pushViewController(createeditProjectViewConroller, animated: true)
+    }
+    
     
     
     // View Code
@@ -58,12 +66,12 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // Delegate and DataSource for tableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           return 3
-       }
-       
-       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeViewControllerCustomTableViewCell.cellIdentifier, for: indexPath) as! HomeViewControllerCustomTableViewCell as HomeViewControllerCustomTableViewCell
-//        cell.viewSetup()
+        //        cell.viewSetup()
         cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         return cell
     }
@@ -72,14 +80,14 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return CGFloat(130)
     }
     
-   
     
     
     
     
-       
     
-
-
+    
+    
+    
+    
 }
 

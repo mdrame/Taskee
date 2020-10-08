@@ -16,6 +16,8 @@
 		77492B7325141A6800519EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77492B7125141A6800519EED /* LaunchScreen.storyboard */; };
 		77492B7E25141A6800519EED /* TaskeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B7D25141A6800519EED /* TaskeeTests.swift */; };
 		77492B8925141A6800519EED /* TaskeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B8825141A6800519EED /* TaskeeUITests.swift */; };
+		77935FA5252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */; };
+		77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */; };
 		77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		77492B8425141A6800519EED /* TaskeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77492B8825141A6800519EED /* TaskeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeUITests.swift; sourceTree = "<group>"; };
 		77492B8A25141A6800519EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newEditCustomColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
 		77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				77492B6725141A6600519EED /* Home.swift */,
+				77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */,
+				77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */,
 			);
 			path = TableViewCustomeCells;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 				77492B6825141A6600519EED /* Home.swift in Sources */,
 				77492B6425141A6600519EED /* AppDelegate.swift in Sources */,
 				77492B6625141A6600519EED /* SceneDelegate.swift in Sources */,
+				77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */,
 				77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */,
+				77935FA5252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
