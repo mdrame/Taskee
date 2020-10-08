@@ -63,7 +63,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeViewControllerCustomTableViewCell.cellIdentifier, for: indexPath) as! HomeViewControllerCustomTableViewCell as HomeViewControllerCustomTableViewCell
-        cell.textLabel?.text = "Test"
+//        cell.viewSetup()
         cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         return cell
     }
