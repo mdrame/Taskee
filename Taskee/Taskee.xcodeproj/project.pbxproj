@@ -16,7 +16,12 @@
 		77492B7E25141A6800519EED /* TaskeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B7D25141A6800519EED /* TaskeeTests.swift */; };
 		77492B8925141A6800519EED /* TaskeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B8825141A6800519EED /* TaskeeUITests.swift */; };
 		77935FA5252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */; };
-		77935FA825303FEC009F066A /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA625303FEC009F066A /* Project.xcdatamodeld */; };
+		77935FAA25304BA2009F066A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA925304BA2009F066A /* CoreDataStack.swift */; };
+		77935FB0253053AC009F066A /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77935FAE253053AC009F066A /* Project.xcdatamodeld */; };
+		77935FB5253059EF009F066A /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FB1253059EE009F066A /* Project+CoreDataProperties.swift */; };
+		77935FB6253059EF009F066A /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FB2253059EE009F066A /* Task+CoreDataClass.swift */; };
+		77935FB7253059EF009F066A /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FB3253059EF009F066A /* Project+CoreDataClass.swift */; };
+		77935FB8253059EF009F066A /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FB4253059EF009F066A /* Task+CoreDataProperties.swift */; };
 		77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */; };
 		77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +59,12 @@
 		77492B8825141A6800519EED /* TaskeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeUITests.swift; sourceTree = "<group>"; };
 		77492B8A25141A6800519EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newEditCustomColorCollectionViewCell.swift; sourceTree = "<group>"; };
-		77935FA725303FEC009F066A /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
+		77935FA925304BA2009F066A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		77935FAF253053AC009F066A /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
+		77935FB1253059EE009F066A /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		77935FB2253059EE009F066A /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77935FB3253059EF009F066A /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = "<group>"; };
+		77935FB4253059EF009F066A /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
 		77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +125,12 @@
 				77492B6F25141A6800519EED /* Assets.xcassets */,
 				77492B7125141A6800519EED /* LaunchScreen.storyboard */,
 				77492B7425141A6800519EED /* Info.plist */,
-				77935FA625303FEC009F066A /* Project.xcdatamodeld */,
+				77935FA925304BA2009F066A /* CoreDataStack.swift */,
+				77935FAE253053AC009F066A /* Project.xcdatamodeld */,
+				77935FB3253059EF009F066A /* Project+CoreDataClass.swift */,
+				77935FB1253059EE009F066A /* Project+CoreDataProperties.swift */,
+				77935FB2253059EE009F066A /* Task+CoreDataClass.swift */,
+				77935FB4253059EF009F066A /* Task+CoreDataProperties.swift */,
 			);
 			path = Taskee;
 			sourceTree = "<group>";
@@ -305,11 +320,16 @@
 			files = (
 				77492B6825141A6600519EED /* Home.swift in Sources */,
 				77492B6425141A6600519EED /* AppDelegate.swift in Sources */,
-				77935FA825303FEC009F066A /* Project.xcdatamodeld in Sources */,
 				77492B6625141A6600519EED /* SceneDelegate.swift in Sources */,
+				77935FB0253053AC009F066A /* Project.xcdatamodeld in Sources */,
 				77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */,
 				77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */,
+				77935FB6253059EF009F066A /* Task+CoreDataClass.swift in Sources */,
 				77935FA5252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift in Sources */,
+				77935FB5253059EF009F066A /* Project+CoreDataProperties.swift in Sources */,
+				77935FB7253059EF009F066A /* Project+CoreDataClass.swift in Sources */,
+				77935FB8253059EF009F066A /* Task+CoreDataProperties.swift in Sources */,
+				77935FAA25304BA2009F066A /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,12 +660,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		77935FA625303FEC009F066A /* Project.xcdatamodeld */ = {
+		77935FAE253053AC009F066A /* Project.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				77935FA725303FEC009F066A /* Project.xcdatamodel */,
+				77935FAF253053AC009F066A /* Project.xcdatamodel */,
 			);
-			currentVersion = 77935FA725303FEC009F066A /* Project.xcdatamodel */;
+			currentVersion = 77935FAF253053AC009F066A /* Project.xcdatamodel */;
 			path = Project.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

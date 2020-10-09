@@ -19,7 +19,6 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         homeTableViewConstrain()
         homeTableView.delegate = self
         homeTableView.dataSource = self
-        let project = Project
        
     }
     

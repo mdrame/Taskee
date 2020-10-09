@@ -11,7 +11,10 @@ import UIKit
 class EditProjectViewController: UIViewController {
     
     // Global Variables
-    private var collectionCellBackgroundColour: [UIColor] = [.red, .brown, .green, .gray, .lightGray ]
+    var store: CoreDataStack?
+    var project: Project?
+    var collectionCellBackgroundColour: [UIColor] = [.red, .brown, .green, .purple, .systemPink]
+    var selectedColor: UIColor = .brown
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,7 @@ class EditProjectViewController: UIViewController {
         // Do any additional setup after loading the view.
         ViewControllerViewCode(allow: true, text: "New Project or Edit")
         setupView()
+        
     }
     // View Code
     private func ViewControllerViewCode(allow: Bool, text string: String?) {
@@ -29,7 +33,17 @@ class EditProjectViewController: UIViewController {
         navigationItem.rightBarButtonItem = saveProjectButton
     }
     @objc func saveProject() {
-        dismiss(animated: true, completion: nil)
+        if project == nil {
+            let newProject = Project(context: store!.mainContext)
+            newProject.name = newEditTextField.text
+            newProject.color = selectedColor
+            store?.saveContext()
+        } else {
+            project?.name = newEditTextField.text
+            project?.color = selectedColor
+            store?.saveContext()
+        }
+        self.navigationController?.popViewController(animated: true)
     }
     /// This vew addes uikit views to viewcontroller view, that includes constraints
     private func setupView() {
@@ -65,7 +79,7 @@ class EditProjectViewController: UIViewController {
         mainCollectionView.register(newEditCustomColorCollectionViewCell.self, forCellWithReuseIdentifier: newEditCustomColorCollectionViewCell.identifier)
         return mainCollectionView
     }()
-   
+    
 }
 
 
@@ -78,7 +92,7 @@ extension EditProjectViewController: UICollectionViewDelegate {
     //        cell?.layer.borderWidth = 10
     //        chosenColor = colors[indexPath.row]
     //    }
-        
+    
     //    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
     //        let cell = collectionView.cellForItem(at: indexPath)
     //        let clear = UIColor.clear
@@ -94,12 +108,12 @@ extension EditProjectViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: newEditCustomColorCollectionViewCell.identifier, for: indexPath) as! newEditCustomColorCollectionViewCell
-        cell.backgroundColor = collectionCellBackgroundColour[indexPath.row]
+        cell.backgroundColor =  collectionCellBackgroundColour[indexPath.row]
         cell.layer.cornerRadius = cell.frame.size.width/2
         return cell
     }
     
-
+    
 }
 
 extension EditProjectViewController: UICollectionViewDelegateFlowLayout {
