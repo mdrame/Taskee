@@ -35,7 +35,7 @@ class HomeViewControllerCustomTableViewCell: UITableViewCell {
     
     lazy var colorView: UIView = {
         let colorView = UIView()
-        colorView.backgroundColor = .blue
+//        colorView.backgroundColor = .blue
         colorView.translatesAutoresizingMaskIntoConstraints = false
         colorView.layer.cornerRadius = 10
         colorView.clipsToBounds = true
@@ -43,13 +43,11 @@ class HomeViewControllerCustomTableViewCell: UITableViewCell {
     }()
     let taskLabelLabel: UILabel = {
         let taskLabelLabel = UILabel()
-        taskLabelLabel.text = "SPD Industry"
         taskLabelLabel.translatesAutoresizingMaskIntoConstraints = false
         return taskLabelLabel
     }()
     let projectTitleLabel: UILabel = {
         let projectTitleLabel = UILabel()
-        projectTitleLabel.text = "5 Pending tasks"
         projectTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         return projectTitleLabel
     }()

@@ -19,6 +19,8 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
         homeTableViewConstrain()
         homeTableView.delegate = self
         homeTableView.dataSource = self
+        let project = Project
+       
     }
     
     // Outlets Action
@@ -66,7 +68,7 @@ class Home: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // Delegate and DataSource for tableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

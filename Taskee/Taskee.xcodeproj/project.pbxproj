@@ -11,12 +11,12 @@
 		77492B6625141A6600519EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B6525141A6600519EED /* SceneDelegate.swift */; };
 		77492B6825141A6600519EED /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B6725141A6600519EED /* Home.swift */; };
 		77492B6B25141A6600519EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77492B6925141A6600519EED /* Main.storyboard */; };
-		77492B6E25141A6600519EED /* Taskee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77492B6C25141A6600519EED /* Taskee.xcdatamodeld */; };
 		77492B7025141A6800519EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77492B6F25141A6800519EED /* Assets.xcassets */; };
 		77492B7325141A6800519EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77492B7125141A6800519EED /* LaunchScreen.storyboard */; };
 		77492B7E25141A6800519EED /* TaskeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B7D25141A6800519EED /* TaskeeTests.swift */; };
 		77492B8925141A6800519EED /* TaskeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77492B8825141A6800519EED /* TaskeeUITests.swift */; };
 		77935FA5252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */; };
+		77935FA825303FEC009F066A /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77935FA625303FEC009F066A /* Project.xcdatamodeld */; };
 		77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */; };
 		77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		77492B6525141A6600519EED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		77492B6725141A6600519EED /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		77492B6A25141A6600519EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		77492B6D25141A6600519EED /* Taskee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taskee.xcdatamodel; sourceTree = "<group>"; };
 		77492B6F25141A6800519EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77492B7225141A6800519EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77492B7425141A6800519EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		77492B8825141A6800519EED /* TaskeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskeeUITests.swift; sourceTree = "<group>"; };
 		77492B8A25141A6800519EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77935FA4252EFA76009F066A /* newEditCustomColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newEditCustomColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		77935FA725303FEC009F066A /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
 		77ED5C8A252EE1330014CA58 /* EditProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
 		77FC3D682525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 				77492B6F25141A6800519EED /* Assets.xcassets */,
 				77492B7125141A6800519EED /* LaunchScreen.storyboard */,
 				77492B7425141A6800519EED /* Info.plist */,
-				77492B6C25141A6600519EED /* Taskee.xcdatamodeld */,
+				77935FA625303FEC009F066A /* Project.xcdatamodeld */,
 			);
 			path = Taskee;
 			sourceTree = "<group>";
@@ -303,9 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77492B6E25141A6600519EED /* Taskee.xcdatamodeld in Sources */,
 				77492B6825141A6600519EED /* Home.swift in Sources */,
 				77492B6425141A6600519EED /* AppDelegate.swift in Sources */,
+				77935FA825303FEC009F066A /* Project.xcdatamodeld in Sources */,
 				77492B6625141A6600519EED /* SceneDelegate.swift in Sources */,
 				77ED5C8B252EE1330014CA58 /* EditProjectViewController.swift in Sources */,
 				77FC3D692525C27F00D85D40 /* HomeViewControllerCustomTableViewCell.swift in Sources */,
@@ -640,13 +640,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		77492B6C25141A6600519EED /* Taskee.xcdatamodeld */ = {
+		77935FA625303FEC009F066A /* Project.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				77492B6D25141A6600519EED /* Taskee.xcdatamodel */,
+				77935FA725303FEC009F066A /* Project.xcdatamodel */,
 			);
-			currentVersion = 77492B6D25141A6600519EED /* Taskee.xcdatamodel */;
-			path = Taskee.xcdatamodeld;
+			currentVersion = 77935FA725303FEC009F066A /* Project.xcdatamodel */;
+			path = Project.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
